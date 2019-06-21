@@ -1,0 +1,60 @@
+.nav {
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.active {
+    color: #111111;
+}
+
+li a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #949494;
+    text-decoration: none;
+    padding: 30px;
+}
+
+a:hover {
+    background-color: #E0E0E0;
+    transition: 0.3s;
+}
+
+a:active {
+    color: #111111;
+}
+
+ul {
+    top: 0;
+    right: 40px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+}
+
+.top {
+    position: fixed;
+  top: 0;
+  width: 100%;
+    background-color: white;
+}
+
+li {
+    display:inline;
+    float: right;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
