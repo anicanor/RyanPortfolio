@@ -1,15 +1,50 @@
+/*-----------------
+General Stylization
+-----------------*/
+body{
+    font-family:'Roboto', Arial;
+}
+
+.IconLink{
+    position: absolute;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.IconLink:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+/*------------
+Navigation Bar
+------------*/
 .nav {
-    padding-left: 40px;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
 }
 
 .active {
     color: #111111;
+    font-weight: 600;
+}
+
+li {
+    display:inline;
+    float: right;
 }
 
 li a {
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -30,17 +65,9 @@ a:active {
     color: #111111;
 }
 
-ul {
-    top: 0;
-    right: 40px;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: white;
-    position: fixed;
-}
-
+/*----------------------
+Body Text Implementation
+----------------------*/
 .top {
     position: fixed;
   top: 0;
@@ -48,13 +75,101 @@ ul {
     background-color: white;
 }
 
-li {
-    display:inline;
-    float: right;
-}
-
 .main {
   padding: 16px;
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.pixel_logo{
+    display: block;
+    margin-top: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65px;
+    height: 138px;
+    object-fit: contain;
+}
+
+header h1{
+    line-height: 200px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    top: 438px;
+    width: 100%;
+    font-family: 'Poppins', Arial;
+    font-size: 50px;
+    font-weight: 500px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #111111;
+}
+
+h1 ~ h2{
+    line-height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #111111;
+}
+
+.envelope {
+    top:882px;
+    left:80px;
+    width: 32px;
+    height: 25px;
+}
+
+.linkedin-logo {
+    top:882px;
+    left:152px;
+    width: 25px;
+    height: 25px;
+}
+
+.medium-icon {
+    top:882px;
+    left:217px;
+    width: 30px;
+    height: 24px;
+}
+
+.mouse {
+    position: absolute;
+    top:884px;
+    right:100px;
+    width: 28px;
+    height: 50px;
+    object-fit: contain;
+}
+
+header p{
+    position: absolute;
+    top:881px;
+    right:150px;
+    width: 249px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #949494;
+}
+
+.mouse:hover + p{
+    color: #111111;
+    transform: scale(1.005);
+    transition: 0.1s;
 }
